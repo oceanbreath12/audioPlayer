@@ -1,0 +1,10 @@
+{
+    "name": "pwa audio player",
+    "short_name": "pwa",
+    "version": "1.0.0",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "blue"
+
+  }
+  

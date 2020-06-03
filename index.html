@@ -1,0 +1,37 @@
+<!DOCTYPE html5>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/manifest.json">
+
+</head>
+
+<body>
+    <div class='container'>
+        <canvas id="graph"></canvas>
+    </div>
+        <audio width="400" height="300" id="audio"></audio>
+        <div id="songTitle">Title</div>
+        <div id="currentTime" class="current-time">00:00</div>
+        <input id="slider" type="range" min="0" max="1" onchange="seekSong()">
+    
+
+        <div class="buttons">
+            <div id="previous" onclick="previous()"></div>
+            <div id="play" onclick="playPause()"></div>
+            <div id="next" onclick="next()"></div>
+        </div>
+    
+
+    
+    <footer> &copy; Victoria Bussi</footer>
+    <script src="main.js"></script>
+    
+</body>
+
+</html>
